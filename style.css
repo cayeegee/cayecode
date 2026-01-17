@@ -5,13 +5,15 @@ list-style-type: none;
 }
     
 
-header{
+header {
 position: relative;
 width: 100%;
 }
+
 header img {
 width:100%;
-a{
+    
+a {
  text-decoration: none;
 color: #ffda79;
 font-weight: 500;
@@ -24,7 +26,7 @@ height:500px;
 display: block;
 }
 
-nav{
+nav {
 
 position: absolute;
 top: 20%;
@@ -45,9 +47,9 @@ width:70%;
 margin: auto;
 }
 
-
-nav li a{
+nav li a {
 text-decoration: none;
 color: white;
 }
+
 
