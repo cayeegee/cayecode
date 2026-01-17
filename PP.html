@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image & Description Layout</title>
+   <link rel="stylesheet" href="PP.css"></link>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+            align-items: center; 
+            flex-wrap: wrap; 
+        }
+
+        
+        .image-section {
+            flex: 1 1 350px;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .description-section {
+            flex: 1 1 400px;
+        }
+
+        .description-section h2 {
+            color: #222;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .description-section p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .action-btn:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="image-section"
+            <img src="30.jpg"alt="PORTRAIT">
+        </div>
+
+        <div class="description-section">
+            <h2>Sample Title Here</h2>
+            <p>This is a sample description to go alongside the image on the left. You can write details about the photo, a product, a place, or any content you want to highlight.</p>
+            <p>Add more paragraphs as needed! The layout will adjust automatically on mobile devices—stacking the image above the description for easy reading.</p>
+            <p>You can also include lists, links, or other elements here to make the content more engaging.</p>
+            <!-- Optional call-to-action button -->
+            <a href="#" class="action-btn">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>

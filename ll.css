@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.calendar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.months-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 15px;
+}
+
+.month-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.month-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.events-list {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.no-events {
+    color: #888;
+    font-style: italic;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .months-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .months-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}

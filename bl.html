@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid with Description</title>
+   <link rel="stylesheet" href="bl.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px;
+        }
+
+        .description-section {
+            flex: 1 1 300px; 
+        }
+
+        .description-section h2 {
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .description-section p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .image-grid {
+            flex: 1 1 400px; 
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-template-rows: repeat(2, 1fr); 
+            grid-template-rows: repeat(2, fr); 
+            gap: 10px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="description-section">
+            <h2>ATHLETIC & SPORTS</h2>
+            <p>Welcome to the dynamic wold of athletics and sports at Paracelis Technical and Vocational High School! Our Athletics and Sports department is the beating heart of spirited competition and personal growth.</p>
+
+
+<p>From the court to the field, our student-athletes experience the thrill of competition while developing essential life skills such as teamwork, discipline, and leadership. Our dedicated coaches and support staff are committed to guiding our athletes toward success, on and off the playing surface.</p>
+
+
+<p>Explore our sports offerings through a visual journey. Take a look at our dynamic basketball team, our powerful volleyball squad, and two more impressive teams, all captured in action. These images encapsulate the spirit and dedication that define the athletic culture at Paracelis Technical and Vocational High School</p>
+
+
+<p>Stay updated with the latest sports events, schedules, and team news. Whether you’re an athlete, a proud parent, or a sports enthusiast, this page is your gateway to the world of sports at Paracelis Technical and Vocational High School</p>
+
+
+        </div>
+
+        
+        <div class="image-grid">
+            <img src="a.jpg" alt="Photo 1 description">
+            <img src="b.jpg" alt="Photo 2 description">
+            <img src="c.jpg" alt="Photo 3 description">
+            <img src="d.jpg" alt="Photo 4 description">
+            <img src="e.jpg" alt="Photo 5 description">
+            <img src="f.jpg" alt="Photo 6 description">
+        </div>
+    </div>
+</body>
+</html>

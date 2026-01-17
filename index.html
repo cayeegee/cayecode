@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Image, Scrolling Text</title>
+
+ <style> 
+
+ul{
+list-style-type:none; 
+margin:0; 
+padding: 0; 
+overflow:hidden; 
+background-color:#333; 
+}
+
+li{ 
+float: left; 
+}
+
+li.dropdown{ 
+display: inline-block; 
+}
+
+li a:hover, dropdown:hover .dropbtn{ 
+background-color: pink; 
+}
+
+li a, .dropbtn{ 
+display: inline-block; 
+color: white; 
+text-align: center; 
+padding: 14px 16px; 
+text-decoration: none; 
+}
+
+.dropdown-content{ 
+display: none; 
+position: absolute; 
+background-color: #pink; 
+min-width: 160px; 
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+z-index: 1; 
+} 
+
+.dropdown-content a{ 
+color: black; 
+padding: 12px 16px; 
+text-decoration: none; 
+display: block; 
+text-align: left; 
+}
+
+.dropdown-content a:hover{ 
+background-color:#f1f1f1; 
+}
+
+.dropdown:hover .dropdown-content{ 
+display:block; 
+}
+ </style> 
+    <title>Glass Morphism Navbar</title>
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <header>
+          <div class="fixed-image">
+        <img src="2new.jpg" alt="Fixed Header Image">
+    </div>
+
+    <nav>
+
+
+<li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">ABOUT</a>
+    <div class="dropdown-content"> 
+    <a href="#">PTVHS hymn</a>
+    <a href="#">Brief History</a>
+   </div> 
+</li>
+
+<li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">ACADEMICS</a>
+    <div class="dropdown-content"> 
+    <a href="#">Junior High School</a>
+    <a href="#">Senior High School</a>
+ 
+   </div> 
+</li>
+              
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">EVENTS</a>
+    <div class="dropdown-content"> 
+    <a href="cl.html">PTVHS Past Events Gallery</a>
+    <a href="ll.html">PTVHS Academic Calendar</a>
+    
+   </div> 
+</li>
+               <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">STUDENTS LIFE</a>
+    <div class="dropdown-content"> 
+    <a href="bl.html">Athletic and Sports</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+   </div> 
+</li>
+
+                </nav>
+</header>
+
+<div class="kodfun-galeri">
+   <div style="background-image: url('20.jpg');"></div>
+   <div style="background-image: url(15.jpg);"></div>
+   <div style="background-image: url(40.jpg);"></div>
+   <div style="background-image: url(21.jpg);"></div>
+   <div style="background-image: url(27.jpg);"></div>
+   <div style="background-image: url(12new.jpg);"></div>
+   <div style="background-image: url(11new.jpg);"></div>
+   <div style="background-image: url(7new.jpg);"></div>
+   <div style="background-image: url(29.jpg);"></div>
+</div>
+<style>
+.kodfun-galeri {
+  display: flex;
+  height: 20rem;
+  gap: 1rem
+}
+
+.kodfun-galeri >div {
+flex:1;
+border-radius: 1rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: auto 100%;
+transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.kodfun-galeri > div:hover {
+flex: 5;
+}
+</style>
+
+
+</body>
+</html>

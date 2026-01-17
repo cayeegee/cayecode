@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTVHS Academic Calendar</title>
+<link rel="stylesheet" href="ll.css"></link>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .calendar-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .months-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            grid-template-rows: repeat(2, auto); /* 2 rows */
+            gap: 15px;
+        }
+
+        .month-card {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        .month-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .events-list {
+            list-style-type: none;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .no-events {
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 768px) {
+            .months-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .months-grid {
+                grid-template-columns: 1fr; /* 1 column on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <h1>PTVHS ACADEMIC CALENDAR</h1>
+        
+        <div class="months-grid">
+            <!-- January -->
+            <div class="month-card">
+                <div class="month-title">January</div>
+                <ul class="events-list">
+                    <li>1 - New Year's Day</li>
+                    <li>28 - New Year's Holiday</li>
+                </ul>
+            </div>
+
+            <!-- February -->
+            <div class="month-card">
+                <div class="month-title">February</div>
+                <ul class="events-list">
+                    <li>25 - EDSA Revolution Day</li>
+                    <li>29 - Philippine Pioneer Anniversary</li>
+                    <li>29 - School</li>
+                </ul>
+            </div>
+
+            <!-- March -->
+            <div class="month-card">
+                <div class="month-title">March</div>
+                <p class="no-events">Currently, there are no scheduled events.</p>
+            </div>
+
+            <!-- April -->
+            <div class="month-card">
+                <div class="month-title">April</div>
+                <ul class="events-list">
+                    <li>09 - Maundy Thursday</li>
+                    <li>10 - Good Friday</li>
+                    <li>21 - Black Saturday</li>
+                    <li>1 - Eid'l Fitr Holiday</li>
+                </ul>
+            </div>
+
+            <!-- May -->
+            <div class="month-card">
+                <div class="month-title">May</div>
+                <ul class="events-list">
+                    <li>1 - Labor Day</li>
+                </ul>
+            </div>
+
+            <!-- June -->
+            <div class="month-card">
+                <div class="month-title">June</div>
+                <ul class="events-list">
+                    <li>12 - Independence Day</li>
+                    <li>28 - Eid'l Adha (Feast of the Sacrifice)</li>
+                </ul>
+            </div>
+
+            <!-- July -->
+            <div class="month-card">
+                <div class="month-title">July</div>
+                <p class="no-events">Currently, there are no scheduled events.</p>
+            </div>
+
+            <!-- August -->
+            <div class="month-card">
+                <div class="month-title">August</div>
+                <ul class="events-list">
+                    <li>21 - Ninoy Aquino Day</li>
+                    <li>25 - National Heroes Day</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
